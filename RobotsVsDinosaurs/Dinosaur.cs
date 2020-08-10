@@ -15,7 +15,7 @@ namespace RobotsVsDinosaurs
         public int dinosaureEnergy;
         public int dinosaurAttackPower;
         public string dinosaurAttackType;
-        List<Herd> party;
+        public List<Herd> party;
 
         //constructor
         public Dinosaur(string dinoName, int dinoHealth, int dinoEnergy, int dinoAttack, string attacktype)

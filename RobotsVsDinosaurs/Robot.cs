@@ -14,6 +14,7 @@ namespace RobotsVsDinosaurs
         public int robotPower;
         public int robotAttackPower;
         public string weaponType;
+        public List<Fleet> fleets;
 
         //contructor
         public Robot(string roboName, int roboHealth, int roboPower, int roboAttackPower, string roboweapon)
@@ -23,6 +24,7 @@ namespace RobotsVsDinosaurs
             this.robotPower = roboPower;
             this.robotAttackPower = roboAttackPower;
             this.weaponType = roboweapon;
+            fleets = new List<Fleet>();
         }
     }
 }

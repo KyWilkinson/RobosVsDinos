@@ -9,24 +9,32 @@ namespace RobotsVsDinosaurs
     public class Herd
     {
         //member variabes
-        public List<Herd> herd;
+        public List<Dinosaur> party;
 
         //costructor
-        public Herd herd = new Herd()
+        public Herd()
         {
-            party = new List<Herd>();
+            party = new List<Dinosaur>();
             Dinosaur velociraptor = new Dinosaur("Velociraptor", 80, 50, 7, "Claw Swipe");
             Dinosaur tRex = new Dinosaur("T-Rex", 120, 50, 17, "Tail Strike");
             Dinosaur sarcosuchus = new Dinosaur("Sarcosuchus", 100, 50, 18, "Bite");
-            herd.Add(velociraptor);
-            herd.Add(tRex);
-            herd.Add(sarcosuchus);
+            party.Add(velociraptor);
+            party.Add(tRex);
+            party.Add(sarcosuchus);
         }
 
         //member methods
-        public void PopulateHerd()
+        public Herd CreateHerd()
         {
-            herd.Add(herd);
+            Herd herd = new Herd();
+
+            return herd;
+            
+        }
+
+        public void PopulateHerd(Dinosaur herd)
+        {
+            party.Add(herd);
         }
 
 

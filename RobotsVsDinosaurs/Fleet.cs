@@ -10,30 +10,30 @@ namespace RobotsVsDinosaurs
    public class Fleet
     {
         //member variables
-        public List<Fleet> inventory;
+        public List<Robot> fleets;
 
         //constructor
         public Fleet()
         {
-            inventory = new List<Fleet>();
+            fleets = new List<Robot>();
             Robot robot1 = new Robot("Battle Droid", 100, 50, 12, "Blaster Rifle");
             Robot robot2 = new Robot("Assassin Droid", 80, 50, 5, "Energy Knife");
             Robot robot3 = new Robot("Juggernaut Droid", 120, 50, 18, "Gattling Cannon");
-            inventory.Add(robot1);
-            inventory.Add(robot2);
-            inventory.Add(robot3);
+            fleets.Add(robot1);
+            fleets.Add(robot2);
+            fleets.Add(robot3);
         }
 
         //memeber methods
-        public Fleet CreateFleet(string name, int health, int powerLevel, int attackPower, string weaponType)
+        public Fleet CreateFleet()
         {
-            Fleet fleet = new Fleet(name, health, powerLevel, attackPower, weaponType);
+            Fleet fleet = new Fleet();
 
             return fleet;
         }
-        public void PopulateFleet(Fleet inventory)
+        public void PopulateFleet(Robot fleet)
         {
-            
+            fleets.Add(fleet);
         }
     }
 }
