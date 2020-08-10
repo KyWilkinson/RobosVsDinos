@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaurs
 {
-    class Robot
+    public class Robot
     {
+        //member variables
+        public string robotName;
+        public int robotHealth;
+        public int robotPower;
+        public int robotAttackPower;
+        public string weaponType;
+
+        //contructor
+        public Robot(string roboName, int roboHealth, int roboPower, int roboAttackPower, string roboweapon)
+        {
+            this.robotName = roboName;
+            this.robotHealth = roboHealth;
+            this.robotPower = roboPower;
+            this.robotAttackPower = roboAttackPower;
+            this.weaponType = roboweapon;
+        }
     }
 }

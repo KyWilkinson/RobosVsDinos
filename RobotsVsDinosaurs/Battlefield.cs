@@ -14,6 +14,8 @@ namespace RobotsVsDinosaurs
         public Battlefield()
         {
             Battlefield battlefield = new Battlefield();
+           
+
         }
 
         //Memeber Methods
@@ -22,7 +24,7 @@ namespace RobotsVsDinosaurs
         //Call all methods here to run game
         public void RunGame()
         {
-
+            
         }
     }
 }
