@@ -15,7 +15,6 @@ namespace RobotsVsDinosaurs
         public int dinosaureEnergy;
         public int dinosaurAttackPower;
         public string dinosaurAttackType;
-        public List<Herd> party;
 
         //constructor
         public Dinosaur(string dinoName, int dinoHealth, int dinoEnergy, int dinoAttack, string attacktype)
@@ -25,10 +24,22 @@ namespace RobotsVsDinosaurs
             dinosaureEnergy = dinoEnergy;
             dinosaurAttackPower = dinoAttack;
             dinosaurAttackType = attacktype;
-            party = new List<Herd>();
         }
         //member methods
-        
+
+        public void Attack(Robot robot)
+        {
+            robot.robotHealth -= dinosaurAttackPower;
+        }
+
+        //How to get Robot attack dinosaur an vice versa
+        //^^ Loops are key
+        //how to select a target
+        //^^ use s switch which i dont really have a clue watch the vids again
+        //how to get targets health to drop by the proper amount
+        //^^ is going to be a loop solution but what kind
+        //how to break this problem down even more
+
 
 
     }

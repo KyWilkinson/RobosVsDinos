@@ -76,20 +76,22 @@ namespace RobotsVsDinosaurs
         }
         public void BattleMechanics()
         {
-            int battleDroidHealth = 100;
-            int assassinDroidhealth = 80;
-            int juggernautDroid = 120;
-            int velociraporHealth = 100;
-
-
-        }
-        public void ShowWeaponDetails(List<Weapon> weapons)
-        {
-            foreach(Weapon item in weapons)
+            bool playgame = true;
+            while(playgame)
             {
-                Console.WriteLine(item.weaponName + " " + item.attackPower);
+                
             }
+            
+            //How to get Robot attack dinosaur an vice versa
+            //^^ Loops are key
+            //how to select a target
+            //^^ use s switch which i dont really have a clue watch the vids again
+            //how to get targets health to drop by the proper amount
+            //^^ is going to be a loop solution but what kind
+            //how to break this problem down even more
+
         }
+       
 
 
     }
