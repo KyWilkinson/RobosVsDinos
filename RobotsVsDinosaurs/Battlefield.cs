@@ -11,8 +11,8 @@ namespace RobotsVsDinosaurs
     public class Battlefield
     {
         //Memeber Variables
-        public string robots;
-        public string dinosaurs;
+        Fleet fleet = new Fleet();
+        Herd herd = new Herd();
         Random random;
         //Constructor
         public Battlefield()
@@ -33,13 +33,13 @@ namespace RobotsVsDinosaurs
             Console.ReadLine();
             Console.WriteLine("Choose your team robots or dinosaurs");
             string response = Console.ReadLine();
-            if(response == robots)
+            if(response == "robots")
             {
-                CallFleet();
+                CallFleet(fleet.fleets);
             }
-            else if(response == dinosaurs)
+            else if(response == "dinosaurs")
             {
-
+                CallHerd(herd.party);
             }
 
             
@@ -55,6 +55,7 @@ namespace RobotsVsDinosaurs
                 Console.WriteLine(item.dinosaureEnergy);
                 Console.WriteLine(item.dinosaurAttackPower);
                 Console.WriteLine(item.dinosaurAttackType);
+                Console.WriteLine("---------------------------");
             }
 
         }
@@ -67,6 +68,7 @@ namespace RobotsVsDinosaurs
                 Console.WriteLine(item.robotPower);
                 Console.WriteLine(item.robotAttackPower);
                 Console.WriteLine(item.robotAttackPower);
+                Console.WriteLine("---------------------------");
             }
         }
 
