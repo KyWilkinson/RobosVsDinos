@@ -91,7 +91,14 @@ namespace RobotsVsDinosaurs
             //how to break this problem down even more
 
         }
-       
+        public void ShowWeaponDetails(List<Weapon> weapons)
+        {
+            foreach(Weapon item in weapons)
+            {
+                Console.WriteLine(item.weaponName + " " + item.attackPower);
+            }
+        }
+
 
 
     }
