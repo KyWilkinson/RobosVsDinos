@@ -11,6 +11,7 @@ namespace RobotsVsDinosaurs
     {
         //member variables
         public List<Robot> fleets;
+        public List<Weapon> armory; 
 
         //constructor
         public Fleet()
@@ -22,18 +23,15 @@ namespace RobotsVsDinosaurs
             fleets.Add(robot1);
             fleets.Add(robot2);
             fleets.Add(robot3);
+            armory = new List<Weapon>();
+            Weapon weapon = new Weapon("Blaster Rifle", 12);
+            Weapon weapon1 = new Weapon("Energy Knife", 5);
+            Weapon weapon2 = new Weapon("Gatling Cannon", 18);
+            armory.Add(weapon);
+            armory.Add(weapon1);
+            armory.Add(weapon2);
         }
 
         //memeber methods
-        public Fleet CreateFleet()
-        {
-            Fleet fleet = new Fleet();
-
-            return fleet;
-        }
-        public void PopulateFleet(Robot fleet)
-        {
-            fleets.Add(fleet);
-        }
     }
 }

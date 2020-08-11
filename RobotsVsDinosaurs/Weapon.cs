@@ -8,6 +8,15 @@ namespace RobotsVsDinosaurs
 {
     public class Weapon
     {
+        public string weaponName;
+        public int attackPower;
+
+        public Weapon(string weaponName, int attackPower)
+        {
+            this.weaponName = weaponName;
+            this.attackPower = attackPower;
+        }
+
 
     }
 }

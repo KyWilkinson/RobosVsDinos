@@ -36,10 +36,13 @@ namespace RobotsVsDinosaurs
             if(response == "robots")
             {
                 CallFleet(fleet.fleets);
+                ShowWeaponDetails(fleet.armory);
+                Console.ReadLine();
             }
             else if(response == "dinosaurs")
             {
                 CallHerd(herd.party);
+                Console.ReadLine();
             }
 
             
@@ -67,8 +70,24 @@ namespace RobotsVsDinosaurs
                 Console.WriteLine(item.robotHealth);
                 Console.WriteLine(item.robotPower);
                 Console.WriteLine(item.robotAttackPower);
-                Console.WriteLine(item.robotAttackPower);
+                Console.WriteLine(item.weaponType);
                 Console.WriteLine("---------------------------");
+            }
+        }
+        public void BattleMechanics()
+        {
+            int battleDroidHealth = 100;
+            int assassinDroidhealth = 80;
+            int juggernautDroid = 120;
+            int velociraporHealth = 100;
+
+
+        }
+        public void ShowWeaponDetails(List<Weapon> weapons)
+        {
+            foreach(Weapon item in weapons)
+            {
+                Console.WriteLine(item.weaponName + " " + item.attackPower);
             }
         }
 

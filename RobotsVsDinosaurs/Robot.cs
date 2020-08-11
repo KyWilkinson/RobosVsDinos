@@ -19,12 +19,13 @@ namespace RobotsVsDinosaurs
         //contructor
         public Robot(string roboName, int roboHealth, int roboPower, int roboAttackPower, string roboweapon)
         {
-            this.robotName = roboName;
-            this.robotHealth = roboHealth;
-            this.robotPower = roboPower;
-            this.robotAttackPower = roboAttackPower;
-            this.weaponType = roboweapon;
+            robotName = roboName;
+            robotHealth = roboHealth;
+            robotPower = roboPower;
+            robotAttackPower = roboAttackPower;
+            weaponType = roboweapon;
             fleets = new List<Fleet>();
         }
+        
     }
 }

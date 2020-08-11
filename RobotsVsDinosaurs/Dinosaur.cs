@@ -20,11 +20,11 @@ namespace RobotsVsDinosaurs
         //constructor
         public Dinosaur(string dinoName, int dinoHealth, int dinoEnergy, int dinoAttack, string attacktype)
         {
-            this.dinosaurName = dinoName;
-            this.dinosaurHealth = dinoHealth;
-            this.dinosaureEnergy = dinoEnergy;
-            this.dinosaurAttackPower = dinoAttack;
-            this.dinosaurAttackType = attacktype;
+            dinosaurName = dinoName;
+            dinosaurHealth = dinoHealth;
+            dinosaureEnergy = dinoEnergy;
+            dinosaurAttackPower = dinoAttack;
+            dinosaurAttackType = attacktype;
             party = new List<Herd>();
         }
         //member methods
