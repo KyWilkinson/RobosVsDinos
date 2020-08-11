@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,13 +11,14 @@ namespace RobotsVsDinosaurs
     public class Battlefield
     {
         //Memeber Variables
-
+        public string robots;
+        public string dinosaurs;
+        Random random;
         //Constructor
         public Battlefield()
         {
-            Battlefield battlefield = new Battlefield();
+            random = new Random();
            
-
         }
 
         //Memeber Methods
@@ -26,8 +28,20 @@ namespace RobotsVsDinosaurs
         public void RunGame()
         {
             Console.WriteLine("Robots Vs Dinosaurs!");
+            Console.WriteLine("--------------------------");
             Console.WriteLine("Please press enter to start");
             Console.ReadLine();
+            Console.WriteLine("Choose your team robots or dinosaurs");
+            string response = Console.ReadLine();
+            if(response == robots)
+            {
+                CallFleet();
+            }
+            else if(response == dinosaurs)
+            {
+
+            }
+
             
             
         }
@@ -55,6 +69,7 @@ namespace RobotsVsDinosaurs
                 Console.WriteLine(item.robotAttackPower);
             }
         }
+
 
     }
 }
